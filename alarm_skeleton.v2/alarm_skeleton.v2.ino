@@ -1,5 +1,7 @@
 #include <Adafruit_PN532.h>
 
+// Shout out to glc8a himself for the original code.  Minor edits here to support an adapted workshop.
+
 //Defines the pins for the RFID reader. Note that pins 2 & 3 are used by the shield and cannot be used for anything else.
 Adafruit_PN532 nfc(2, 3);
 
@@ -38,7 +40,7 @@ void setup(void)
 
 void loop(void)
 /*
- * Our loop() is just a set of checker-handler pairs.
+ * Our loop() is just a set of event checker-handler pairs.
  * A "checker" returns TRUE if something has happneed
  * A handler" does someting when the checker is TRUE
  */
